@@ -40,7 +40,7 @@ echo "Installing prettier..."
 npm install --silent --global prettier
 
 echo "Prettifing files..."
-prettier $INPUT_PRETTIER_OPTIONS || echo "Problem while prettifying your files with options $INPUT_PRETTIER_OPTIONS"
+prettier $INPUT_PRETTIER_OPTIONS
 
 # To keep runtime good, just continue if something was changed
 if _git_changed;
